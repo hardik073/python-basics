@@ -37,6 +37,7 @@ message = "Hello, World!"
 print(len(name))
 age = 25
 message = "Alice is "+ str(25) +" years old."
+message_with_f_string = f"Aclice is {age} years old"
 
 
 #Booleans
