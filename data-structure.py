@@ -129,3 +129,31 @@ a, b, c = 1, 2, 3  # Same as (1, 2, 3)
 
 # Swap variables elegantly
 x, y = y, x  # Swaps values!
+
+
+#Sets
+
+# ---------- Set  ----------#
+
+#Sets are collections that only stores unique values.
+
+empty_set = set()
+
+# Set with values - both ways work
+numbers = {1, 2, 3, 4, 5}
+fruits = set(["apple", "banana", "orange"])
+
+# From a list (removes duplicates)
+scores = [85, 90, 85, 92, 90]
+unique_scores = set(scores)  # {85, 90, 92}
+
+colors = {"red","green"}
+colors.add("blue")
+print(colors)
+
+colors.remove("blue") #Error if not found
+colors.discard("yellow") #No Error if not found
+
+# Check membership
+if "red" in colors:
+    print("Red is available")
