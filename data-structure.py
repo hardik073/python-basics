@@ -91,3 +91,41 @@ students = {
 
 # Access nested data
 print(students["alice"]["grade"])  # "A"
+
+
+
+#Tuples
+
+# ---------- Tuples  ----------#
+
+
+#Tuples are like list but it can't be changed once created.
+#They are immutalbe sequances.
+
+empty = ()
+
+points = (3, 5)
+colors = ("Red","Green","Blue")
+
+# Single item tuple needs comma!
+single = (42,)  # Note the comma
+not_tuple = (42)  # This is just 42 in parentheses
+
+# Without parentheses (implicit)
+coordinates = 10, 20
+
+print(points[0])
+print(colors[-2])
+
+# Slicing works too
+print(colors[0:2])   # ("red", "green")
+
+# Unpack values
+point = (3, 5)
+x, y = point  # x = 3, y = 5
+
+# Multiple assignment
+a, b, c = 1, 2, 3  # Same as (1, 2, 3)
+
+# Swap variables elegantly
+x, y = y, x  # Swaps values!
